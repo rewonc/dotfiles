@@ -179,3 +179,10 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	name = Rewon Child
+	email = rewonc@gmail.com
+
+[credential]
+	helper = osxkeychain
