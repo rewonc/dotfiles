@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# First, set up bash to use a new bash
+# Add the new shell to the list of allowed shells
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+# Change to the new shell
+chsh -s /usr/local/bin/bash 
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
