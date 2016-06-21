@@ -49,4 +49,5 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Add virtualenvwrapper
 VIRTUAL_ENV_DISABLE_PROMPT=1
-source /usr/local/bin/virtualenvwrapper.sh
+source /mnt/home/rewon/.local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
