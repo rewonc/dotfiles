@@ -147,3 +147,18 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+### BAIDU
+
+# Switch to Baidu working environment
+alias baidu="workon baidu && cd ~/dev/"
+
+function ssh_to_svail {
+   ssh ${USER}@svail-$1.svail.baidu.com
+}
+alias svail='ssh_to_svail'
+alias grep="grep -R -I --include=*.cpp --include=*.cu --include=*.h --include=SConstruct --include=SConscript --include=*.py --include=*.sh --include=*.c --include=*.cxx"
+alias rm_osx="find . -type f -name '._*' -exec rm -i {} \;"
+alias sq="squeue -u user"
+alias sj="scontrol show job"
+alias sc="scancel"
