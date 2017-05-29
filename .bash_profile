@@ -47,14 +47,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# Add virtualenvwrapper
-VIRTUAL_ENV_DISABLE_PROMPT=1
-source /mnt/home/rewon/.local/bin/virtualenvwrapper.sh
-# source /usr/local/bin/virtualenvwrapper.sh
-
-export CUDA_HOME=/tools/cuda_7.5.18
-export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
-PATH=${CUDA_HOME}/bin:${PATH}
-
 diskquota
+
 

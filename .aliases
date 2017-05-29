@@ -159,6 +159,7 @@ function ssh_to_svail {
 alias svail='ssh_to_svail'
 alias gr="grep -R -I --include=*.cpp --include=*.cu --include=*.h --include=SConstruct --include=SConscript --include=*.py --include=*.sh --include=*.c --include=*.cxx"
 alias rm_osx="find . -type f -name '._*' -exec rm -i {} \;"
-alias sq="squeue -u rewon"
+alias sq="squeue -u rewon -o '%.18i %.9P %.35j %.8u %.2t %.10M %.6D %R'"
 alias sj="scontrol show job"
 alias sc="scancel"
+alias joblogs="sj | grep rewon | grep StdOut | cut -d\"=\" -f 2 | xargs dirname | xargs -I % sh -c \"echo ++++++++++++++++++++++++++++; echo %; echo ' '; tail %/log.out -n 100; echo -----------------------\" | less"
