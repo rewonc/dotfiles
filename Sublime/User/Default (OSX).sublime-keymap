@@ -1,0 +1,4 @@
+[
+	// Refresh folder list with F5
+	{ "keys": ["super+shift+r"], "command": "refresh_folder_list" }
+]

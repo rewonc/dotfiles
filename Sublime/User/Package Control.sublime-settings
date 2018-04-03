@@ -1,0 +1,30 @@
+{
+	"auto_upgrade": false,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Babel",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"JavaScriptNext - ES6 Syntax",
+		"JSX",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Material Theme",
+		"Package Control",
+		"PlainTasks",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-eslint_d",
+		"SublimeLinter-cpplint",
+		"Theme - Brogrammer",
+		"Theme - Spacegray"
+	]
+}
