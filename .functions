@@ -1,3 +1,16 @@
+# add a new notes page.
+function notate() {
+	if [ -z "$1" ]
+  		then
+    		echo "No title supplied"
+	fi
+	OUTPATH=/Users/rewonchild/Google\ Drive/Notes/research/nodes/$1.md
+	echo "Creating new file at $OUTPATH"
+	cp /Users/rewonchild/Google\ Drive/Notes/research/nodes/new_note_template.md "$OUTPATH"
+	sed -i '' -e "s/TITLE_HERE/$1/g" "$OUTPATH"
+}
+
+
 # Simple calculator
 function calc() {
 	local result="";
